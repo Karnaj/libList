@@ -9,7 +9,7 @@ void print_integer_list(s_list *list)
         for(size_t i = 0; i < list->size; i++)
         {
             int *value = list_get(list, i);
-            printf("list[i] = %d.\n", *value);
+            printf("list[%zu] = %d.\n", i, *value);
         }
     }
 }
